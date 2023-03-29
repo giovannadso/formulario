@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Formulário</title>
 </head>
 <body>
@@ -13,59 +14,62 @@
         <h1>CADASTRO</h1>
         <form>
             <label for="name">Nome:</label>
-            <input type="text" id="name" placeholder="Nome">
+            <input type="text" id="name" placeholder="Nome" class="textField"> 
 
-            <label for="colorpicker">Cor favorita</label>
-            <input type="color" id="colorpicker">
+            <label for="colorpicker">Cor favorita:</label>
+            <input type="color" id="colorpicker"><br>
 
-            <label for="nascimento">Data de nascimento</label>
-            <input type="date" id="nascimento">
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento"><br>
 
-            <label for="hrnascismento">Horário de nascimento</label>
-            <input type="time" id="hrnascismento">
+            <label for="hrnascismento">Horário de nascimento:</label>
+            <input type="time" id="hrnascismento"><br>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="E-mail" placeholder="aaa@bbb.com">
+            <label for="email">E-mail:</label>
+            <input type="email" id="E-mail" placeholder="aaa@bbb.com" class="textField">
             <label for="confemail"> Confirme o e-mail</label>
-            <input type="confemail" id="Confirme o e-mail" placeholder="aaa@bbb.com">
+            <input type="confemail" id="Confirme o e-mail" placeholder="aaa@bbb.com" class="textField">
             
-            <label for="doc"> Faça upload do documento</label>
+            <label for="doc"> Faça upload do documento:</label>
             <input type="file" id="doc" accept=".pdf" multiple>
 
             <input type="hidden" id="test" value="test">
 
-            <label for="image">Faça upload da foto</label>
-            <input type="image" id="image">
+            <label for="image">Faça upload da foto:</label>
+            <input type="image" id="image"><br>
 
-            <label for="telefone">Telefone</label>
-            <input type="number" id="Telefone" placeholder="(xx) 99999-9999">
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="Telefone" placeholder="(xx) 99999-9999" class="textField">
 
-            <label for="pass">Senha</label>
-            <input type="password" id="pass">
-            <label for="confpass">Confirme a senha</label>
-            <input type="password" id="confpass">
+            <label for="pass">Senha:</label>
+            <input type="password" id="pass" class="textField">
+            <label for="confpass">Confirme a senha:</label>
+            <input type="password" id="confpass" class="textField">
 
-            <label for="sexo">Sexo</label>
+            <label for="sexo">Sexo:</label><br>
 
             <input type="radio" id="fem" name="sexo" value="f">
             <label for="fem">Feminino</label>
 
             <input type="radio" id="masc" name="sexo" value="m">
-            <label for="masc">Masculino</label>
+            <label for="masc">Masculino</label><br>
 
             <input type="radio" name="sexo" id="ni" value="n">
-            <label for="ni">Prefiro não declarar</label>
+            <label for="ni">Prefiro não declarar</label><br>
 
             <label for="satisfacao">Sastifação:</label>
-            <input type="range" id="satisfacao">
+            <input type="range" id="satisfacao"><br>
 
             <input type="checkbox" id="agree" value="y">
-            <label for="agree">Concordo com os termos</label>
+            <label for="agree">Concordo com os termos</label><br>
             <input type="checkbox" id="agree" value="y">
-            <label for="agree">Concordo com a políticas</label>
-
-            <input type="reset" value="Limpar">
-            <button>Enviar</button>
+            <label for="agree">Concordo com a políticas</label><br>
+       
+        <div id="button">
+            <input type="reset" value="Limpar" class="whiteButton">
+            <div id="sep"></div>
+            <button class="whiteButton" type="button">Enviar</button>
+        </div>
 
         </form>
          </div>
